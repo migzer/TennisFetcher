@@ -1,0 +1,34 @@
+# ---------------------------------------------------
+# .gitignore pour TennisFetcher
+# ---------------------------------------------------
+
+# 1. Sécurité / Variables d'environnement
+# EMPÊCHE ABSOLUMENT la fuite de tes clés si tu utilises un fichier .env en local
+.env
+.env.*
+
+# 2. Fichiers générés par Python (Cache)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 3. Environnements virtuels Python (si tu en utilises un en local)
+venv/
+.venv/
+env/
+.env_python/
+pip-log.txt
+
+# 4. Fichiers de logs (Pour ne pas polluer l'historique avec les résultats de tes tests locaux)
+*.log
+cron.log
+tennis_sync.log
+
+# 5. Fichiers liés au système d'exploitation
+.DS_Store
+Thumbs.db
+
+# 6. Dossiers générés par les IDE (Éditeurs de code comme VSCode ou PyCharm)
+.vscode/
+.idea/
+*.swp
