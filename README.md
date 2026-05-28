@@ -1,6 +1,6 @@
 # 🎾 TennisFetcher
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.13+-blue.svg)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-Serverless-2088FF.svg)
 ![Status](https://img.shields.io/badge/Status-Production-success.svg)
 
