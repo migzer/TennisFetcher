@@ -2,7 +2,7 @@ name: TennisFetcher Hourly Sync
 
 on:
   schedule:
-    - cron: '0 * * * *' # Tourne toutes les heures à la minute 0
+    - cron: '16 * * * *' # Tourne toutes les heures à la minute 16
   workflow_dispatch: # Permet de cliquer sur un bouton pour forcer l'exécution
 
 jobs:
