@@ -147,7 +147,7 @@ def sanitize_text(text):
     text = unicodedata.normalize('NFKD', text)
     # On force l'encodage ASCII. 'ignore' supprime automatiquement les accents isolés et les
     text = text.encode('ASCII', 'ignore')
-    return text.decode('utf-8').lower()
+    return text.decode('utf-8').lower().replace('-', ' ').replace("'", '')
 
 
 def check_sportsdb_exists(date_yyyy_mm_dd, tournament, player1, player2):
@@ -172,7 +172,7 @@ def check_sportsdb_exists(date_yyyy_mm_dd, tournament, player1, player2):
         # L'astuce : On coupe à 35 caractères au lieu de 40.
         # Cela garantit qu'on ne cherche jamais la lettre qui a été tronquée/corrompue à la fin,
         # tout en restant assez long pour identifier un match unique avec 100% de certitude.
-        expected_string_safe = expected_string[:35].replace('-', ' ')
+        expected_string_safe = expected_string[:35]
 
         if expected_string_safe in page_text:
             return True
