@@ -24,5 +24,6 @@ jobs:
 
       - name: Lancement de TennisFetcher
         env:
-          SPORTSDB_SESSION: ${{ secrets.SPORTSDB_SESSION }}
+          SPORTSDB_USERNAME: ${{ secrets.SPORTSDB_USERNAME }}
+          SPORTSDB_PASSWORD: ${{ secrets.SPORTSDB_PASSWORD }}
         run: python main.py
